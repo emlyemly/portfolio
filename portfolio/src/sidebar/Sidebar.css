@@ -1,0 +1,34 @@
+.sidebar-container {
+    position: fixed;
+    left: 2%;
+    top: 6%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.linkedin-link,
+.github-link {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin-link {
+    margin-bottom: 1rem;
+}
+
+.github-link {
+    margin-bottom: 1rem;
+}
+
+.linkedin-logo,
+.github-logo {
+    width: 75%;
+}
+
+.vertical-line {
+    height: 15vh;
+    border-right: 1px solid black;
+    margin-top: 2%;
+}

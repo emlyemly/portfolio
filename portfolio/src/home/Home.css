@@ -1,0 +1,58 @@
+body {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Cinzel';
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.home-container,
+.contact-container {
+    background-color: #eee7e1;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text-container {
+    display: flex;
+    width: 60%;
+    padding: 25vh 0 30vh 0;
+}
+
+.name-text,
+.link-text {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.heading-hover-color {
+    color: #be93d4;
+}
