@@ -3,7 +3,7 @@ import './Experience.css';
 
 const Experience = () => {
     return (
-        <div className='experience-container'>
+        <div className='experience-container' id='experience-container'>
             <link
                 href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'
                 rel='stylesheet'
@@ -12,8 +12,8 @@ const Experience = () => {
                 href='https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'
                 rel='stylesheet'
             ></link>
-            <div className='about-container'>
-                <h1>ABOUT</h1>
+            <div className='about-container' id='about-container'>
+                <h1 className='about-heading'>ABOUT</h1>
                 <p className='experience-summary'>
                     Software engineer experienced in embedded systems and web
                     application development, proficient in MERN stack.

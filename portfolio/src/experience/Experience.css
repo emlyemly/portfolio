@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10vh 0 20vh;
+    padding: 10vh 0;
     font-family: 'Montserrat';
 }
 
@@ -14,15 +14,27 @@
     width: 50%;
 }
 
+.about-container {
+    margin-bottom: 10vh;
+}
+
+.about-heading,
+.experience-heading {
+    margin-bottom: 4vh;
+}
+
+.experience-summary {
+    margin: 0;
+}
+
 .experience-section {
     flex-basis: 100%;
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
+    justify-items: end;
 }
 
 .experience-summary {
     font-family: 'Montserrat';
-    font-size: 1.25rem;
     display: flex;
     flex-flow: column wrap;
     text-align: center;
@@ -31,8 +43,7 @@
 .experience-heading {
     text-align: center;
     position: relative;
-    margin-bottom: 3%;
-    margin-top: 5%;
+    width: 100%;
 }
 
 .horizontal-line {
@@ -49,7 +60,7 @@
     display: flex;
     align-items: flex-start;
     align-self: flex-end;
-    width: 61%;
+    width: 61.5%;
 }
 
 .job-title {
@@ -66,4 +77,54 @@
 .job-summary {
     padding: 15px;
     width: 65%;
+}
+
+.job-4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 1080px) {
+    .about-container {
+        width: 75%;
+    }
+
+    .experience-summary {
+        font-size: 2.5vw;
+    }
+
+    .job-container {
+        width: 66%;
+    }
+}
+
+@media screen and (max-width: 811px) {
+    .experience-section {
+        justify-items: center;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .job-container {
+        width: 75%;
+    }
+
+    .job-summary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .experience-summary {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .about-heading,
+    .experience-heading {
+        margin-bottom: 2vh;
+    }
 }

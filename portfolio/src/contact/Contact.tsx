@@ -3,7 +3,7 @@ import './Contact.css';
 
 const Contact = () => {
     return (
-        <div className='contact-container'>
+        <div className='contact-container' id='contact-container'>
             <div className='contact-left-container'>
                 <h2 className='contact-heading'>CONTACT</h2>
                 <p className='contact-text'>
@@ -27,14 +27,20 @@ const Contact = () => {
                         className='contact-form-field contact-form-msg'
                         placeholder='Message'
                     />
-                    <button className='contact-form-btn' type='submit'>
-                        Send Message
-                    </button>
+                    <div className='contact-form-btn-div'>
+                        <button className='contact-form-btn' type='submit'>
+                            Send Message
+                        </button>
+                    </div>
                 </form>
             </div>
 
             <div className='contact-right-container'>
-                <img src='' alt='Glendale, CA' />
+                <img
+                    src={process.env.PUBLIC_URL + '../Map/Map@2x.png'}
+                    alt='Glendale, CA'
+                    className='contact-map'
+                />
             </div>
         </div>
     );

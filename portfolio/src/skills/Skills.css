@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    padding-bottom: 10vh;
 }
 
 .heading-container {
@@ -10,12 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 4vh;
 }
 
 .hr-skills {
     position: relative;
     width: calc(100% - 270px);
+    display: block;
 }
 
 .skills-heading {
@@ -41,4 +43,17 @@
     justify-content: center;
     padding: 15px 25px;
     margin: 0px 10px 30px;
+}
+
+@media screen and (max-width: 1080px) {
+    .skills-section {
+        justify-content: center;
+        width: 80%;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .heading-container {
+        margin-bottom: 2vh;
+    }
 }
